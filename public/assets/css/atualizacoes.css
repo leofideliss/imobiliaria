@@ -1,0 +1,2395 @@
+/* ****** DESCRIÇÃO IMÓVEL ******* */
+.formatar-texto-caixa-imovel {
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+
+.font-caixa-descricao{
+    color: var(--gray-700, #666276);
+    font-size: 16px;
+    font-family: Noto Sans;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.color-text-black{
+    color: black;
+}
+
+.margin-left-6{
+    margin-left: 6%;
+}
+
+.max-width-941{
+    max-width: 941px;
+}
+
+.remover-decoracao{
+    text-decoration: none;
+}
+
+.btn-branco-borda{
+    --fi-btn-disabled-color: #fff;
+    --fi-btn-bg: #fff;
+    --fi-btn-border-color: #eeaa11;
+    --fi-btn-hover-bg: #fff;
+    --fi-btn-active-bg: #fff;
+    --fi-btn-hover-border-color: #eeaa11;
+    --fi-btn-active-border-color: #eeaa11;
+}
+
+.margin-bottom-10px{
+    margin-bottom: 10px;
+}
+
+.padding-top-bottom-32px{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.padding-button-caixa{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+/* ****** LISTA DE IMÓVEIS ******* */
+
+.background-amarelo-principal{
+    background-color: #eeaa11;
+}
+
+.background-aluguel{
+    background-color: blue;
+}
+
+.background-venda{
+    background-color: red;
+}
+
+.background-Vendaaluguel{
+    background-color: #eeaa11;
+}
+
+.icone-play-imovel{
+    bottom: 0;
+    right: 0;
+}
+
+.botaoVideoItem{
+    border: 2px solid #eeaa11 !important;
+}
+
+.coverImg{
+    height: 100%;
+}
+
+.coverImg>img{
+    height: 430px;
+    max-height: 430px;
+    object-fit: cover;
+}
+
+.imagemHomeCarrossel{
+    height: 100%;
+}
+
+.imagemHomeCarrossel>img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.coverImgMenores>img{
+    height: 207px;
+    max-height: 207px;
+    object-fit: cover;
+}
+
+.remover-padding-card{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.botao-email-card{
+    border: none;
+    background-color: #eeaa11;
+    color: white;
+}
+
+.botao-email-card:hover{
+    background-color: #eeaa11;
+}
+
+.botao-whats-card{
+    border: none;
+    background-color: #34AF23;
+    color: white;
+}
+
+.botao-whats-card:hover{
+    background-color: #34AF23;
+}
+
+.padding-icon-card{
+    
+    padding-left: 18px;
+}
+
+.formatacao{
+    flex: 0 0 auto !important;
+    width: 100% !important;
+}
+
+.esconderFiltroLista{
+    display: none;
+}
+
+.textoMesAluguel{
+    font-size: 0.875rem !important;
+    color: black !important;
+}
+
+.rowImovelPaginacao{
+    --fi-gutter-x: 1.5rem;
+    --fi-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1*var(--fi-gutter-y));
+    margin-right: calc(-0.5*var(--fi-gutter-x));
+    margin-left: calc(-0.5*var(--fi-gutter-x));
+}
+
+.divCardImovelPaginacao{
+    flex: 0 0 auto;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+@media (min-width: 1701px){
+
+    .divCardImovelPaginacao{
+        flex: 0 0 auto;
+        width: 25%;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1700px){
+
+    .divCardImovelPaginacao{
+        flex: 0 0 auto;
+        width: 33.333%;
+    }
+}
+
+@media (min-width: 799px) and (max-width: 1399px) {
+
+    .divCardImovelPaginacao{
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+.divListaPaginacao{
+    width: 60%;
+    padding-right: 20px !important; 
+    padding-left: 20px !important;
+}
+
+.botaoMapaPaginacao{
+    display: none;
+}
+
+.divCaminhoMapa{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.esconderBotaoMapa{
+    display: none;
+}
+
+.abrirMapaPadrao{
+    width: 40% !important;
+    position:sticky !important; 
+    top:0 !important;
+}
+
+.divRedesHome{
+    display: flex;
+    align-items: center;
+}
+
+.divRedesHomeFooter{
+    display: none;
+    align-items: center;
+}
+
+@media (max-width: 751px){
+    .divRedesHome{
+        display: none;
+        
+    }
+
+    .divRedesHomeFooter{
+        display: flex;
+        align-items: center;
+    }
+    
+}
+
+@media (max-width: 650px){
+    .esconderMapaMobile{
+        display: none;
+    }
+
+    .esconderBotaoMapa{
+        display: flex;
+    }
+
+    .esconderBotaoMapa{
+        position: absolute;
+        bottom: 1rem;
+        top: 94%;
+        right: 50%;
+        z-index: 10;
+    }
+
+    .abrirMapaPadrao{
+        height: 100% !important;
+        width: 100% !important;
+        position: absolute !important;
+        top: 0px !important;
+        left: 0px !important;
+    }
+
+    .divListaPaginacao{
+        width: 100%;
+    }
+
+    .botaoMapaPaginacao{
+        width: 20%;
+        display: block;
+        display: flex; 
+        justify-content:end;
+        align-items: center;
+    }
+}
+
+
+/* @media (max-width: 1190px) and (min-width: 799px) {
+
+    .ulDetalhesImoveis>*{
+        flex: 0 0 auto;
+        width: 33%;
+    }
+
+}
+
+@media (max-width: 768px) and (min-width: 450px) {
+
+    .ulDetalhesImoveis>*{
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 449px){
+    .espacamentoDetalhesLi{
+        margin-bottom: 24px !important;
+    }
+
+} */
+
+
+/* ****** MENU LATERAL ******* */
+
+.color-menu-lateral{
+    color: black !important;
+}
+
+/* ****** MENU LATERAL ******* */
+
+.bg-header{
+    background-color: white;
+}
+
+.bg-transparente{
+    background-color: transparent;
+}
+
+.bg-cinza{
+    background-color: rgba(238, 170, 17, 0.10);
+}
+
+.topo-padding-top{
+    padding-top: 4.5rem !important;
+}
+
+.topo-padding-bottom{
+    padding-bottom: 5rem !important;
+}
+
+.margin-topo-75{
+    margin-top: 75px;
+}
+
+/******** DETALHES IMOVEL ********/
+
+.container-financiamento{
+    background: linear-gradient(26deg, rgba(238, 170, 17, 0.19) 0%, rgba(238, 170, 17, 0.25) 50%, rgba(237, 199, 113, 0.31) 100%);
+
+}
+
+.margin-bottom-detalhes{
+    margin-bottom: 24px !important;
+}
+
+.ajusteIconesDetalhes{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+.texto-iniciais-maiusculas{
+    text-transform: capitalize
+}
+
+.tamanho-icone{
+    font-size: 25px !important;
+    color: black;
+}
+
+.textoDuploDetalhes{
+    display: flex;
+    flex-direction: column;
+}
+
+.textoMenorDetalhes{
+    font-size: 12px;
+}
+
+.margin-bottom-9px{
+    margin-bottom: 9px;
+}
+
+.cor-preta-icone{
+    color: black;
+}
+
+.margin-top-icones{
+    margin-top: 20px;
+}
+
+.formatacao-icones{
+    display: flex;
+    align-items: center;
+}
+
+.botao-whats{
+    background-color: #34AF23 !important;
+    margin: 0px !important;
+}
+
+.cor-icone-compartilhar{
+    color: white;
+}
+
+.botao-face{
+    background-color: #3B5998 !important;
+    margin: 0px !important;
+}
+
+.formContatoImóvel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.telefoneEmailFormulario{
+    margin-bottom: 0px !important;
+}
+
+.botaoWhatsFormulario{
+    width: 45px !important;
+    height: 45px !important;
+}
+
+.botaoWhatsFormulario>i{
+    font-size: 1.2rem !important;
+}
+
+.carroselImagens{
+    width: 20% !important;
+}
+
+.tamanhoVideo{
+    width: 80%;
+    height: 100%;
+    min-height: 400px;
+    border-radius: 0.75rem !important;
+}
+
+.fixarDiv{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    bottom: 0px;
+}
+
+#mapDetalhes {
+
+    width: 100%;
+
+    height: 240px;
+
+    background-color: grey;
+}
+
+#mapGoogle{
+    background: #ddd;
+    width: 100%;
+    height: 100vh;
+    z-index: 49;
+}
+
+.localMapGoogle{
+    width: 100%;
+    height: 100%;
+}
+
+.cardDescricao{
+    position: relative;
+}
+
+.cardDescricao::before{
+    content: '';
+    position: absolute;
+}
+
+.conteudoDescricao{
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.conteudoDescricao::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    /* background: linear-gradient(transparent, white); */
+}
+
+.cardDescricao.active .conteudoDescricao{
+    height: auto;
+}
+
+.cardDescricao.active .conteudoDescricao::before{
+    visibility: hidden;
+}
+
+.cardDescricao>a{
+    cursor: pointer;
+}
+
+.divCaracteristicas{
+    display: none;
+}
+
+.divCaracteristicasBlock{
+    display: block;
+}
+
+.addOverflowHidden{
+    overflow: hidden;
+}
+
+.tituloCategoriaProximoImovel{
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 3px;
+    line-height: 1.5;
+}
+
+.conteudoDescricaoPadrao{
+    height: auto;
+}
+
+@media (max-width: 990px){
+
+    .divConteudo{
+        width: 100%;
+    }
+
+    .divSideBar{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 500px){
+
+    .liDetalhes{
+        flex-direction: column;
+    }
+    
+    .divLiDetalhes{
+        margin-bottom: 15px;
+    }
+
+}
+
+
+@media (max-width: 767px){
+
+    .textoProcuraImoveis{
+        margin-top: 30px;
+    }
+
+    .tamanhoVideo{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1192px) {
+
+    .ulDetalhesImoveis>*{
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 1190px) and (min-width: 799px) {
+
+    .ulDetalhesImoveis>*{
+        flex: 0 0 auto;
+        width: 33%;
+    }
+
+}
+
+@media (max-width: 768px) and (min-width: 450px) {
+
+    .ulDetalhesImoveis>*{
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 449px){
+    .espacamentoDetalhesLi{
+        margin-bottom: 24px !important;
+    }
+
+}
+
+.galeriaMobile{
+    display: none;
+}
+
+.textoPrecoVenda{
+    font-size: 35px;
+}
+
+@media (max-width: 600px){
+    .galeriaWeb{
+        display: none;
+    }
+
+    .galeriaMobile{
+        display: block;
+    }
+}
+
+/* ******** CONTATO RECEBA IMÓVEL ********* */
+
+.textoContatoMensagem{
+    font-family: Noto Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    color: #1F1B2D;
+}
+
+.espacamentoHeaderContato{
+    height: 68px;
+}
+
+.marginBottomContato{
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.textoInfoContato{
+    color: #1F1B2D;
+    font-family: Noto Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%;
+    max-width: 352px;
+}
+
+.containerTopoContato{
+    display: flex;
+    align-items: center;
+}
+
+.containerTopoContato i{
+    margin-right: 20px;
+    color: #EEAA11;
+}
+
+.textAreaMensagemContato{
+    height: 192px;
+    max-height: 192px;
+    min-height: 192px !important;
+}
+
+.buttonFinalizarCadastro{
+    color: black;
+}
+
+.heightDivsContato{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.divsPrimeiroCampoMensagem{
+    height: 518px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botaoReceberImoveis{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+}
+
+/* ****** TRABALHE CONOSCO ******* */
+
+.margin-bottom-123{
+    margin-bottom: 123px;
+}
+
+.margin-bottom-70{
+    margin-bottom: 75px;
+}
+
+.max-width-imagembanner{
+    max-width: 966px;
+    height: 500px;
+    width: 100%;
+}
+
+.div-formulario-simulador{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.hiddenResultado{
+    display: none;
+}
+
+.camposSimulador{
+    width: 30%;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#valor-imovel{
+    margin-top: 6px;
+} 
+
+.porcentagemComissao{
+    display: flex;
+    flex-direction: column;
+    margin-top: 21px;
+    margin-bottom: 45px;
+}
+
+.textoComissao{
+    color: #1F1B2D;
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 10px;
+}
+
+.textoValorImovel{
+    color: #1F1B2D;
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.textoPorcentagemComissao{
+    color:  #454056;
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.boxResultado{
+    width: 40%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px dashed #000;
+    background: rgba(253, 188, 49, 0.10);
+}
+
+.textoSuaComissao{
+    color: #454056;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%
+}
+
+.textoSuaTaxa{
+    color: #454056;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    margin-top: 20px;
+    max-width: 80%;
+}
+
+.textoValorComissao{
+    color: #454056;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.textoValorTaxa{
+    color: #454056;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.botaoEntendaMelhor{
+    width: 50%;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.formatacaoTextResultado{
+    display: flex; 
+    flex-direction:column;
+}
+
+@media (max-width: 1000px) {
+
+    .boxResultado{
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .div-formulario-simulador{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .camposSimulador{
+        width: 100%;
+        margin-bottom: 50px;
+        padding-right: 0px !important;
+    }
+
+    .boxResultado{
+        width: 100%;
+    }
+
+}
+
+/* ****** QUEM SOMOS ******* */
+
+.margin-top-setas{
+    margin-top: 20px;
+}
+
+/* ****** IMOVEIS INDICADOS ******* */
+
+.div-tituloFormImoveis{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+}
+
+.divAdicionalTitulo{
+    font-family: Noto Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.form-espacoImoveis{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.texto-formulario{
+    font-family: Noto Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: black;
+    padding-top: 1.5rem;
+}
+
+/* ****** RESUMO IMÓVEIS ******* */
+
+.div-flexResumo{
+    display: flex;
+    justify-content: center;
+}
+
+.div-flexBotaoVoltar{
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* ********** TELA DE CADASTRO ********** */
+
+.divTextoCadastro
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ****** CONTATO ******* */
+
+.margin-icons-contato{
+    margin-top: 30px;
+}
+
+/* ****** HOME ******* */
+
+.padding-header-top{
+    padding-top: 120px;
+}
+
+/* ****** HOME ******* */
+.divHomeHeader{
+    display: flex;
+    align-items: center;
+}
+
+.alinharItensCentro{
+    align-items: center;
+}
+
+.widthCampoBusca{
+    width: 60%;
+}
+
+.espaçoCampoBusca{
+    flex: 0 0 auto;
+    width: 90%;
+}
+
+.espaçoBotãoBuscar{
+    width: 40px;
+    height: 40px;
+}
+
+.botaoLupaBuscar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lupaBotaoBusca{
+    width: 17px;
+    height: 17px;
+}
+
+.corTextoBuscaHome{
+    color: black !important;
+}
+
+/* ****** CARROSSEL ******* */
+
+.alinhamentoItensInternoCarrossel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconeCarrossel{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textoItemCarrossel{
+    color: #666276;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.tns-carousel-wrapper.tns-nav-outside.home [data-controls]
+{
+    margin-top: -19px;
+
+}
+
+/* ****** VENDA ******* */
+
+.justify-center-venda{
+    justify-content: center;
+}
+
+.width-imagem-venda{
+    width: 441px;
+}
+
+.bg-amarelo-numeros{
+    background-color: #eeaa11 !important;
+    color: black !important;
+}
+
+@media (max-width: 500px) {
+    .width-imagem-venda{
+        width: 85%;
+    }
+}
+
+/* ****** FORMULARIO SIMULAÇÃO ******* */
+
+.formularioFinanciamento{
+    width: 50%;
+}
+
+.resultadoFinanciamento{
+    width: 50%;
+    height: 100%;
+
+}
+
+.camposDuplosForm{
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxResultadoFinanciamento{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px dashed #000;
+    background: rgba(253, 188, 49, 0.10);
+}
+
+.hiddenResultadoFinanciamento{
+    display: none;
+}
+
+
+
+.formatacaoResultadoSimulacao{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.textoSecundarioFinanciamento{
+    font-family: Noto Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.textoObservacaoFinanciamento{
+    font-family: Noto Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.textoFinanciamentoValor{
+    color: #454056;
+    font-family: Noto Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.textoMenorFinanciamento{
+    font-family: Noto Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.formatacaoResultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* FILTROS */
+
+.heightDivsFiltros{
+    height: calc(100vh - 266px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+}
+
+.tituloTopoFiltro{
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+    align-items: center;
+    border-bottom: 1px solid #d5d2dc;
+    color: var(--black, #000);
+    font-family: Noto Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.divBotaoFiltroModal{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.divBotaoFiltroModalInterno{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #d5d2dc;
+    padding: 20px;
+}
+
+.fecharModalFiltro{
+    display: none !important;
+}
+
+.mapaFooter{
+    position: fixed;
+    bottom: 70px; 
+    left:45%;
+}
+
+/* ********** MODAL FILTRO ************** */
+
+.itens-filtro {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+.itens-filtro:after {
+content: "";
+clear: both;
+}
+
+.item-filtro {
+border: 1px solid #ccc;
+box-sizing: border-box;
+float: left;
+height: 70px;
+position: relative;
+width: 120px;
+}
+
+.item-filtro + .item-filtro {
+margin-left: 25px;
+}
+
+.item-filtro label {
+    background: #fff no-repeat center center;
+    bottom: 0px;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    left: 0px;
+    position: absolute;
+    right: 0px;
+    text-indent: 100%;
+    top: 0px;
+    white-space: nowrap;
+  }
+
+  .itens-filtro input:focus + label {
+    outline: 2px dotted #21b4d0;
+  }
+
+  .itens-filtro input:checked + label {
+    outline: 4px solid #21b4d0;
+  }
+
+.itens-filtro input:checked + label:after {
+    background: url('../img/icons/check_icon.svg');
+    bottom: -10px;
+    content: "";
+    display: inline-block;
+    height: 20px;
+    position: absolute;
+    right: -10px;
+    width: 20px;
+}
+
+.conteudoFiltrosModal{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.itensConteudoFiltroModal{
+    width: 100%;
+    border-bottom: 1px solid #d5d2dc;
+}
+
+.inputAreaNumber{
+    width: 50%;
+    font-size: 1rem;
+}
+
+.labelFiltroModal{
+    color: var(--black, #000);
+    font-family: Noto Sans;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    margin-bottom: 2.5rem;
+}
+
+.paddingCampoFiltro{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.paddingInternoFiltro{
+    padding-bottom: 2rem;
+}
+
+.infosQntFiltros{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -11px;
+    right: -11px;
+    width: 27px;
+    height: 27px;
+    font-size: 0.85rem;
+    border-radius: 50%;
+    color: #EEAA11 !important;
+    background-color: white;
+    border: 1px solid #EEAA11;
+    
+}
+
+.btn:hover .infosQntFiltros{
+    color: #EEAA11 !important;
+}
+
+.displayNoneFiltro{
+    display: none !important;
+}
+
+.btn-group-sm>.btn{
+    font-weight: bold !important;
+    font-size: 1rem !important;
+}
+
+.labelInternoFiltro{
+    margin-bottom: 0.85rem !important;
+    font-size: 1rem !important;
+}
+
+.btn-check:checked+.btn{
+    background-color: rgba(238, 170, 17, 0.10) !important;
+}
+
+input[type="number"]:focus  {
+    border: 1px solid #EEAA11 !important;
+}
+
+.labels {
+    margin-top:-3px;
+    padding: 5px;
+    position: absolute;
+    visibility: visible;
+    z-index: 1030;
+}
+.labels .arrow{
+    border-top-color: #000000;
+    border-right-color: rgba(0,0,0,0);
+    border-bottom-color: rgba(0,0,0,0);
+    border-left-color: rgba(0,0,0,0);
+    border-width: 5px 5px 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-style: solid;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+.labels .inner{
+    background-color: #000000;
+    border-radius: 4px;
+    color: #FFFFFF;
+    max-width: 200px;
+    padding: 3px 8px;
+    text-align: center;
+    text-decoration: none;  
+}
+
+/* ********** MARCADOR ********* */
+
+.price-tag {
+    background-color: #EEAA11;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 10px 15px;
+    position: relative;
+  }
+  
+  .price-tag::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, 0);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #EEAA11;
+  }
+  
+  [class$=api-load-alpha-banner] {
+    display: none;
+  }
+
+
+  .padding-header-top-infinity{
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }
+
+  .border-bottom-filtros{
+    border-bottom: 1px solid var(--gray-400, #D5D2DC);
+    margin-bottom: 2rem;
+  }
+
+  .linkItemCarrossel{
+    display: flex;
+    flex-direction: column; 
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+  }
+
+  .textoIconeCarrossel{
+    color: var(--gray-700, #666276);
+    font-family: Noto Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+
+  .divCliqueIconeCarrossel{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    transition: background-color 0.3s;
+  }
+
+  .svgIcones{
+    fill: #666276;
+  }
+
+  .clicada{
+    fill: #EEAA11 !important;/* Altera a cor de fundo quando clicado */
+    }
+
+    .corTextoClicada{
+    color: #EEAA11 !important;
+    }
+
+    #carrosselHome [data-controls]{
+        /* margin-top: -1.6rem; */
+        margin-top: -0.8rem;
+        border: 1px solid #666276;
+        width: 25px;
+        height: 25px;
+    }
+
+    #carrosselHome [data-controls]:hover{
+        border: 1px solid #EEAA11;
+    }
+
+    #carrosselHome [data-controls]>i{
+        font-size: 9px;
+    }
+
+    .menuOculto{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        border-right: 1px solid #9691A4;
+        transition: 0.5s;
+        padding-top:60px;
+    }
+
+    .menuOcultoTamanho{
+        width: 400px;
+    }
+
+    .menuOculto a{
+        padding: 20px 8px 20px 32px;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #454056;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .menuOculto a:hover{
+        color: #EEAA11;
+    }
+
+    .linkMenuOculto{
+        display: flex !important;
+        justify-content:space-between;
+    }
+
+    .divLinkTexto{
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .subMenuLinkTexto{
+        color: var(--gray-600, #9691A4);
+        font-family: Noto Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    .divIconeArrow{
+        width: 10%;
+        display:flex;
+        align-items: center;
+    }
+
+    .linkMenuOculto:hover{
+        background-color: rgba(238, 170, 17, 0.10) !important;
+    }
+
+    .btnFechar{
+        position:absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    #contPrincipal{
+        padding: 16px;
+        transition: margin-left 0.5s;
+    }
+
+    .inputBuscaHeader{
+        padding: 13px 22px 13px 25px;
+        border-radius: 8px;
+        width: 40%;
+        border: 1px solid var(--gray-500, #BBB7C5);
+        background: var(--white, #FFF);
+        color: var(--gray-600, #9691A4);
+        font-family: Noto Sans;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    .inputBuscaHeader:focus{
+        border-color: #EEAA11 !important;
+    }
+
+    .addDisplayFlex{
+        display: flex !important;
+    }
+
+    .divBackgroundFiltros{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        position: relative;
+        z-index: 50;
+    }
+
+    .divContainerFiltros{
+        display:flex;
+        justify-content:center;
+        width: 100%;
+        max-width: 1150px;
+    }
+
+    .widthCarrosselFiltros{
+        width: 80%;
+    }
+
+    .divsInfinityScroll{
+        justify-content: space-between;
+    }
+
+    .gm-style-iw-d {
+        overflow: hidden !important;
+    }
+
+    .gm-style-iw-c {
+        padding-top: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    .gm-ui-hover-effect{
+        top: 6px !important;
+        right: 6px !important;
+        border-radius: 50%;
+        background-color: white !important;
+    }
+
+    @media (max-width: 400px) {
+        .ulDivFooter{
+            display: none;
+        }
+
+        .menuOcultoTamanho{
+            width: 100%;
+        }
+
+
+    }
+
+    @media (max-width: 500px) {
+        .ulDivFooter{
+            display: none;
+        }
+
+
+    }
+
+    @media (max-width: 500px) {
+        .mapaFooter {
+            left: 30%;
+        }
+    }
+    
+    @media (min-width: 501px) and (max-width: 850px) {
+        .mapaFooter {
+            left: 40%;
+        }
+    }
+
+    @media (max-width: 991px){
+        .ajusterHeaderInfinityScroll{
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+        }
+    }
+
+    @media (max-width: 750px){
+        .inputBuscaHeader{
+            width: 50%;
+        }
+    }
+
+    .imgHeaderInfinity{
+        display: flex;
+        margin-left: 20px;
+    }
+
+    @media (max-width: 630px) {
+        .widthCarrosselFiltros {
+            display: none;
+        }
+
+        .divContainerFiltros{
+            justify-content: end;
+        }
+
+        #contPrincipal{
+            padding: 0px 0px 0px 16px;
+        }
+
+        .imgHeaderInfinity{
+            display: none;
+        }
+
+        .inputBuscaHeader{
+            width: 85%;
+        }
+
+        .padding-header-top-infinity{
+            padding-bottom: 10px;
+        }
+
+        .border-bottom-filtros{
+            border: 0;
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media (min-width: 631px) and (max-width: 730px) {
+        .widthCarrosselFiltros {
+            width: 40%;
+            margin-right: 80px;
+        }
+    }
+
+    @media (min-width: 731px) and (max-width: 930px) {
+        .widthCarrosselFiltros {
+            width: 50%;
+            margin-right: 60px;
+        }
+    }
+
+    @media (min-width: 931px) and (max-width: 1110px) {
+        .widthCarrosselFiltros{
+            width: 60%;
+            margin-right: 30px;
+        }
+    }
+
+    @media (min-width: 1111px) and (max-width: 1250px) {
+        .widthCarrosselFiltros{
+            width: 70%;
+            margin-left: 30px;
+        }
+    }
+
+    @media screen and(max-height: 450px){
+        .menuOculto{
+            padding-top: 15px;
+        }
+
+        .menuOculto a{
+            font-size: 18px;
+        }
+    }
+
+
+    /* EDIÇÃO AUTOCOMPLETE */
+    .pac-container{
+        z-index: 2000;
+    }
+
+    .pac-item{
+        padding: 10px 10px 10px 10px;
+    }
+
+    .pac-item:hover{
+        background-color: rgba(238, 170, 17, 0.10) !important;
+    }
+
+    .pac-item-query{
+        font-family: Noto Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    #testemunhas>.tns-nav{
+        display: none !important;
+    }
+
+    #imagensSobre>.tns-nav{
+        display: none !important;
+    }
+
+    @media only screen and (max-width: 992px) {
+        #iconePontosMenu{
+            display: block !important;
+            margin-right: 30px;
+        }
+    }
+
+    .carregandoScroll{
+        display: none;
+    }
+
+    .ajustesCarregamentoScroll{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media (max-width: 950px){
+
+        .ajustesCalculadora{
+            display: flex !important;
+            flex-direction: column;
+        }
+
+        .formularioFinanciamento{
+            width: 100%;  
+        }
+
+        .resultadoFinanciamento{
+            width: 100%;
+            padding-left: 3rem;
+            padding-top: 0px !important;
+        }
+    }
+
+    @media (max-width: 520px){
+        .camposDuplosForm{
+            flex-direction: column;
+            margin-bottom: 0px !important;
+        }
+
+        .formularioCampoMobile{
+            width: 100% !important;
+            margin-bottom: 1.5rem !important;
+        }
+    }
+
+    #overflowMenu::-webkit-scrollbar {
+        width: 8px; /* Largura da barra de rolagem */
+        background-color: #efecf3;
+    }
+    #overflowMenu::-webkit-scrollbar-thumb{
+        background-color: #EEAA11; /* Cor do polegar (a parte que você arrasta) */
+        border-radius: 6px; /* Borda arredondada do polegar */
+        width: 6px;
+    }
+
+    @media (max-width: 499px){
+        .itemHomeInfinito{
+            padding-right: calc(var(--fi-gutter-x)*.9) !important;
+            padding-left: calc(var(--fi-gutter-x)*.9) !important;
+        }
+
+        .padding-header-top-infinity{
+            padding-right: calc(var(--fi-gutter-x)*.9) !important;
+            padding-left: calc(var(--fi-gutter-x)*.9) !important;
+        }
+
+        .ajusteHeaderHome{
+            padding: 0px !important;
+        }
+
+        .containerHeaderHome{
+            padding-right: calc(var(--fi-gutter-x)*.9) !important;
+            padding-left: calc(var(--fi-gutter-x)*.9) !important;
+        }
+
+        .inputBuscaHeader{
+            font-size: 12px;
+        }
+    }
+
+    .map-popup .btn-icon{
+        bottom: 1rem;
+        top: 94%;
+        right: 50%;
+    }
+    
+/* ****** GRAFICO DE PIZZA ********* */
+
+.chart-wrapper{
+    width: 500px;
+    height: 500px;
+}
+.chart-container{
+    width: 500px;
+    height: 500px;
+}
+
+.conteudoGraficoPizza{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin: 0 auto;
+    width: fit-content;
+    
+}
+
+.conteudoGraficoPizza .detailsGrafico ul{
+    list-style: none;
+    padding: 0;
+}
+
+.conteudoGraficoPizza .detailsGrafico ul li{
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    margin: 12px 0;
+    text-transform: uppercase;
+}
+
+.conteudoGraficoPizza .detailsGrafico .porcentualGrafico{
+    font-weight: 700;
+    font-family: "Rubik", sans-serif;
+    color: #EEAA11;
+}
+
+.tamanhoGraficoPizza{
+    width: 300px !important;
+    height: 300px !important;
+}
+
+.tituloGraficoPizza{
+    font-family: "Rubik", sans-serif;
+    color: #EEAA11;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px 10px 0px 10px
+}
+
+.divsInfosGrafico{
+    display: flex;
+}
+
+.textosInfosGrafico{
+
+}
+
+.valorInfosGratifo{
+
+}
+
+/* ****** FOOTER ********* */
+
+.personalizarFooter{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.iconeMenuHeaderMobile{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.paddingListaImoveisHome{
+    padding: 0px 10px;
+}
+
+/* ****** CARROSSEL MOBILE ********* */
+
+.carrosselMobile{
+    display: none;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.botaoMobileCarrossel{
+    position: relative; 
+    height:37px;
+    margin-bottom:0px !important;
+    padding: 0px;
+    width: auto;
+}
+
+.widthCarrosselMobileFiltros{
+    width: 90%;
+}
+
+.iBotaoMobileCarrossel{
+    font-size: 15px;
+    display: flex;
+    margin-top: 2px !important;
+    align-items: center;
+    padding-top: 1px;
+    padding-left: 10px;
+    height: 100%;
+}
+
+.gridFiltrosIcones{
+    padding: 0px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gridDetalhesImovel{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.textoVerNoMapa{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    height: 100%;
+}
+
+/* TEXTOS FILTROS */
+
+.botaoRemoverFiltro{
+    margin-right:10px;
+    height:60px;
+    width:50%
+}
+
+.botaoBuscarImovel{
+    height:60px;
+    width:50%
+}
+
+.paddingPrimeiroItemFiltro{
+    padding-bottom:3rem
+}
+
+.paddingUltimoItemFiltro{
+    padding-top: 3rem;
+    border-bottom: 0px !important;
+}
+
+.ajusteBotaoIrTopo{
+    bottom: 4.25rem;
+}
+
+
+
+@media (max-width: 630px) {
+
+    .carrosselMobile{
+        display: flex;
+    }
+
+    .carrosselDesktop{
+        display: none;
+    }
+
+    .iconeMenuHeaderMobile{
+        font-size: 25px;
+    }
+
+    .gridFiltrosIcones{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .labelFiltroModal{
+        font-size: 16px;
+        margin-bottom: 1.5rem
+    }
+
+    .btn-group-sm>.btn{
+        font-size: 0.8rem !important;
+    }
+
+    .textoVerNoMapa{
+        font-size: 12px;
+    }
+
+    /* TEXTOS FILTROS */
+
+    .botaoRemoverFiltro{
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .botaoBuscarImovel{
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .tituloTopoFiltro{
+        font-size: 20px;
+        padding: 25px;
+    }
+
+    .paddingCampoFiltro {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .paddingPrimeiroItemFiltro{
+        padding-bottom:2rem
+    }
+
+    .paddingUltimoItemFiltro{
+        padding-top: 2rem;
+    }
+
+    .inputAreaNumber{
+        font-size: 0.8rem;
+    }
+
+    .inputMaxCondominio{
+        font-size: 0.8rem;
+    }
+
+    .labelInternoFiltro{
+        font-size: 0.9rem !important;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .gridFiltrosIcones{
+        grid-template-columns: 1fr;
+    }
+
+
+
+}
+
+@media (max-width: 499px) {
+    .paddingListaImoveisHome{
+        padding: 0px;
+    }
+}
+
+/* DETALHES DO IMOVEL  */
+
+.paddingItensDetalhes{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.ajusteTamanhoSvg{
+    height: 25px;
+    width: 25px;
+}
+
+ul[data-action="ulDetalhesImovel"]>li>button{
+    border-bottom: 1px solid !important;
+    border-radius: 0px !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding: 9px 0px 14px 0px !important;
+}
+
+.alinharContDetalhes{
+    align-items: center;
+}
+
+.campoResultadoRange{
+    display: flex;
+    align-items: center;
+    padding: 0.575rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #666276;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* VIDEOS DAS PAGINAS GERAIS  */
+
+.videoInfosGerais{
+    width: 100%;
+    height: 500px;
+    border-radius: 0.75rem !important;
+}
+
+.paddingAjustesMobile-20{
+    padding: 0px 20px;
+}
+
+.paddingAjustesMobile-30{
+    padding: 0px 30px;
+}
+
+.paddingAjustesMobile-40{
+    padding: 0px 40px;
+}
+
+.padding-topTrabalhadores{
+    padding-top: 5rem !important;
+}
+
+
+.ajuste-next-anterior{
+    background-size: 40% 50% !important;
+    background-color: white !important;
+    border-radius: 50%;
+    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="%23000"%3e%3cpath d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/%3e%3c/svg%3e') !important;
+} 
+
+.ajuste-next{
+    background-size: 40% 50% !important;
+    background-color: white !important;
+    border-radius: 50%;
+    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="%23000"%3e%3cpath d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/%3e%3c/svg%3e');
+} 
+
+.destaqueCaracteristicaImovel{
+    color: black;
+    font-weight: 700;
+    font-size: 14px !important;
+    padding-right: 12px;
+}
+
+.editar-dados-imovel{
+    color: black;
+    font-weight: 500;
+    font-size: 12px !important;
+}
+
+.fontSize-funcoes{
+    font-size: 14px !important;
+}
+
+
+
+/* AJUSTES GERAL MOBILE  */
+
+@media (max-width: 500px) {
+    .esconderMobile{
+        display: none;
+    }
+    
+    .lead{
+        font-size: 1.1rem;
+    }
+
+    .paddingTopMobile-40{
+        padding-top: 40px;
+    }
+
+    .textoMobile-35px{
+        font-size: 35px;
+    }
+
+    .videoInfosGerais{
+        height: 400px;
+    }
+
+    .topo-padding-bottom{
+        padding-bottom: 0px !important;
+    }
+
+    .padding-topTrabalhadores{
+        padding-top: 0px !important;
+    }
+
+    .margin-bottom-123{
+        margin-bottom: 3rem;
+    }
+
+    .boxResultado{
+        height: 350px;
+    }
+
+    .removerPaddingBottomMobile{
+        padding-bottom: 0px !important;
+    }
+
+    .duvidasFrequentePaddingMobile{
+        width: 100%;
+        margin: 0px !important;
+    }
+
+    .removerPaddingFrequenteMobile{
+        padding: 0px;
+    }
+
+    .textoValorComissao{
+        font-size: 30px;
+    }
+
+    .textoSuaComissao{
+        font-size: 20px;
+    }
+
+    .ajusteImgContato{
+        width: 25px;
+    }
+
+    .textoContatoMobile{
+        font-size: 16px !important;
+    }
+
+    .ajusteBotaoMobiles{
+        font-size: 14px;
+    }
+
+    .iconeAjusteMobile{
+        font-size: 14px; 
+    }
+
+    .deixarAutoBotao{
+        width: auto !important;
+    }
+
+    .iconeFazerParteAjuste{
+        margin-top: 2px !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .margin-bottom-70 {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 750px){
+    .gridDetalhesImovel{
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* ****** DROPZONE ********* */
+
+.dropzone .dz-preview .dz-remove{
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    border: none;
+    z-index: 11;
+}
+
+.dropzone .dz-remove{
+    justify-content: center;
+    align-items: center;
+    height: 1.65rem;
+    width: 1.65rem;
+    font-size: 1rem;
+    text-indent: -9999px;
+    white-space: nowrap;
+    position: absolute;
+    z-index: 2;
+    background-color: #fff !important;
+    box-shadow: 0 0.5rem 1.5rem 0.5rem rgba(0, 0, 0, 0.075);
+    border-radius: 100%;
+    top: -0.825rem;
+    right: -0.825rem;
+}
+
+.dropzone .dz-remove:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    content: "";
+    mask-size: 40%;
+    -webkit-mask-size: 40%;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    background-color: #7E8299;
+    -webkit-mask-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="var%28--kt-gray-600%29"%3e%3cpath d="M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z"/%3e%3c/svg%3e');
+    mask-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="var%28--kt-gray-600%29"%3e%3cpath d="M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z"/%3e%3c/svg%3e');
+}
+
+/* ****** LISTA ITENS XML ********* */
+
+.lista-itensXml{
+    display: flex;
+    flex-direction: column;
+}
+
+.botoesFiltrosImoveisUser{
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.botaoFiltroImoveisUser{
+    background-color: #f5f4f8;
+    color: #454056;
+    font-weight: normal;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.botaoFiltroImoveisUserSelecionado{
+    background-color: #EEAA11 !important;
+    color: white !important;
+
+}
+
+.botaoFiltroImoveisUserSelecionado:hover{
+    color: white !important;
+}
+
+.botaoFiltroImoveisUser:hover{
+    color: #EEAA11;
+}
+
+#descricaoReformulada{
+    overflow: hidden;
+    height: 320px;
+}
+
+.ajusteDescricao{
+    overflow: hidden;
+    height: 320px;
+}
+
+#descricaoGeralAjuste{
+    display: none;
+}
+
+.textoPequenoDescr{
+    height: 100% !important;
+}
+
+
+#caracteristica_list{
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+@media (max-width: 950px) {
+    .responsividadeItemCaracteristica{
+        width: 50% !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .responsividadeItemCaracteristica{
+        width: 100% !important;
+    }
+
+    #caracteristica_list{
+        max-height: 400px;
+        overflow-y: auto;
+    }
+}
+
+.tamanhoImagemTrabalhadores{
+    object-fit: cover;
+    width: 88%;
+    height: auto;
+    max-height: 494px;
+}
+
+@media (max-width: 991px) {
+    .tamanhoImagemTrabalhadores{
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 1100px) {
+    .ajusteTitleMobile{
+        margin-top: 15px;
+    }
+
+    .resolverAberturaDropdown{
+        position: absolute;
+        top: 33px;
+        right: 0;
+    }
+}
+
+
+
+/* .display-none-header{
+    display: none !important;
+} */
+
+/* .display-flex-header{
+    display: flex !important;
+} */
+
+/* .display-none-header{
+    position: fixed !important; 
+    bottom: 0 !important;
+    z-index: var(--fi-offcanvas-zindex) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    max-width: 100% !important;
+    color: var(--fi-offcanvas-color) !important;
+    visibility: hidden !important;
+    background-color: var(--fi-offcanvas-bg) !important;
+    background-clip: padding-box !important;
+    outline: 0 !important;
+    box-shadow: var(--fi-offcanvas-box-shadow) !important;
+    transition: transform .3s ease-in-out !important;   
+} */
